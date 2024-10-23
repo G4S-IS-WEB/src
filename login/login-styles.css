@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 60px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a92f2ff7, rgb(232, 232, 232), #5c5e5e);
+    background-size: cover;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-group input {
+    width: 91%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding-left: 15px; /* To add some space inside the input field */
+    margin-top: 15px;
+  }
+  
+  .form-group button {
+    padding: 8px 18px;
+    background-color: #f90000d4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+  }
+  
+  .terms-container {
+    margin-left: 15px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .terms-checkbox {
+    margin-right: 5px;
+    margin-bottom: 22px;
+  }
+  
+  .terms-text {
+    font-size: 0.85em;
+    color: #666;
+  }
+  
+  .terms-text a {
+    color: #f90000d4;
+  }
+  
+  .forgot-password {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .forgot-password a {
+    color: #f90000d4;
+  }
+  
