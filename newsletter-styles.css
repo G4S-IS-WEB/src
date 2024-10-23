@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.newsletter {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.newsletter-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 23%; /* Smaller width to fit 4 items per row */
+    max-width: 23%; /* Ensures max width per item is 23% */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.newsletter-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Pop effect on hover */
+.newsletter-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the service item */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .newsletter-item {
+        flex: 1 1 45%; /* Two items per row on medium screens */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsletter-item {
+        flex: 1 1 100%; /* One item per row on small screens */
+        max-width: 100%;
+    }
+}

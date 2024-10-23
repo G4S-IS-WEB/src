@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Σύνδεση Χρήστη</title>
+  <!-- Linked CSS files -->
+  <link rel="stylesheet" href="login-styles.css">
+</head>
+<body>
+  </header>
+  <!-- Login -->
+  <div class="container">
+    <h2>Είσοδος Χρήστη</h2>
+      <div class="form-group">
+        <label for="username">Όνομα Χρήστη:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Κωδικός:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="terms-container">
+        <input type="checkbox" id="terms" name="terms" class="terms-checkbox" required>
+        <label for="terms" class="terms-text">Αποδέχομαι τους <a href="#">όρους και τις προϋποθέσεις</a></label>
+      </div>
+      <div class="form-group">
+        <button type="submit">Σύνδεση</button>
+      </div>
+    </form>
+    <div class="forgot-password">
+      <p>Δεν μπορώ να συνδεθώ. <a href="#">Ξεχάσατε τον κωδικό;</a></p>
+    </div>
+  </div>
+</body>
+</html>
