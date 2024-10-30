@@ -1,0 +1,106 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* User card styles */
+.first-user-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+    max-width: 100%;
+}
+
+.second-user-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+    max-width: 100%;
+}
+.User-photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Horizontal line styles */
+hr {
+    margin: 10px 0;
+    border: 0;
+    height: 1px;
+    background: #eee;
+}
+
+/* User name styles */
+.User-name {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* General info styles */
+.general-info p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-thing, .contact-thing {
+    font-weight: bold;
+}
+
+/* Jobs assigned styles */
+.jobs-assigned h2, .Skills h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #007BFF; /* Blue underline */
+    padding-bottom: 5px;
+}
+
+.jobs-assigned ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.jobs-assigned li {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.jobs-assigned p {
+    margin-left: 20px; /* Indent description */
+}
+
+/* Skills section styles */
+.Skills-input p {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.skill::before {
+    content: " ★"; /* Add a space before the star */
+    color: rgb(117, 101, 12);   /* Optional: Change color of the star */
+}
+
