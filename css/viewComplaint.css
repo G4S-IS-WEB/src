@@ -1,0 +1,276 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #b3b3b3;
+}
+
+.sidebar {
+    width: 5%;
+    border-right: 1px solid #cecece;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff, #b3b3b3);
+    height: 100%;
+    min-width: 70px;
+}
+
+.HR-text {
+    width: 100%;
+    margin-top: auto;
+    padding: 15px 0;
+    font-size: clamp(35px, 3vw, 45px); 
+    font-weight: bold;
+    color: #2e2e2e; 
+    text-align: center; 
+    background: transparent;
+    cursor: pointer;
+}
+
+.HR-text:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.send-message-btn {
+    margin-top: 10px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.request-list {
+    width: 35%;
+    border-right: 1px solid #d3d3d3;
+    overflow-y: auto;
+    padding-top: 20px;
+    background-color: #ffffff;
+}
+
+.request-list a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #2c3e50;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.request-list a:hover {
+    background-color: #c9c9c9;
+}
+
+.subject {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+}
+
+.email-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f0f2f5;
+}
+
+.request-body {
+    display: none;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-body:target {
+    display: block;
+}
+
+.request-body h2 {
+    margin-bottom: 15px;
+    color: #313131;
+}
+
+.request-body p {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #252525;
+}
+
+.reply-btn {
+    padding: 7px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reply-btn:hover {
+    background-color: rgb(0, 139, 204);
+    color: white;
+}
+
+.reply-section {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.reply-section textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.reply-section button.send-btn {
+    padding: 10px 20px;
+    background-color: rgb(0, 139, 204);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.reply-section .file-btn {
+    padding: 10px 20px;
+    background-color: rgb(224, 224, 224);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+
+.reply-section .file-btn:hover {
+    background-color: #d1d1d1;
+}
+
+.reply-section button.send-btn:hover {
+    background-color: #072e9b;
+}
+
+.email-date-time {
+    font-size: 12px; 
+    color: #777; 
+    margin-top: 5px;
+    margin-left: auto;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .reply-section {
+    display: block;
+} 
+
+.subject {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.request-body:target + .subject {
+    background-color: #c9c9c9;
+    color: #000;
+}
+
+.request-body:target {
+    display: block;
+}
+
+.sidebar .logout {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80px;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.sidebar .logout:hover {
+    background-color: #d32f2f;
+}
+
+.sidebar .logout:active {
+    background-color: #b71c1c;
+    transform: scale(0.95);
+}
+
+.sidebar .menu {
+    background-color: #444444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80px;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar .menu:hover {
+    background-color: #585858;
+}
+
+.sidebar .menu:active {
+    background-color: #747474;
+    transform: scale(0.95);
+}

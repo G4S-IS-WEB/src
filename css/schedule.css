@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-main {
+    flex: 1;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 150px;
+}
+
+.schedule {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 18px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.schedule th, .schedule td {
+    padding: 15px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.schedule th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.schedule tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.schedule tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.schedule tr:hover {
+    background-color: #ffecec;
+    transition: background-color 0.3s;
+}
+
+.schedule td {
+    color: #555;
+    font-size: 17px;
+}
+
+.schedule caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #444;
+    background-color: #ffefef;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
