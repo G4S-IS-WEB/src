@@ -1,6 +1,6 @@
 # Human Resource Information System (HRIS)
 
-Click here[http://ism.dmst.aueb.gr/ismgroup19/jsp/login.jsp] to see the system
+[Click here to see the system](http://ism.dmst.aueb.gr/ismgroup19/jsp/login.jsp)
 
 Key features include:
 - **Meeting requests**, **complaints**, and **days-off** management
