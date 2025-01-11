@@ -33,7 +33,7 @@ This system is based on a previous application developed for G4S Greece, where t
 
 ## Contributors
 
-- Thanos Sakakos
+- Thanos Sakkatos
 - Pavlos Stamatis
 - Spilios Dimakopoulos
 - Stavros Vlahos
