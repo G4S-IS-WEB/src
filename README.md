@@ -23,7 +23,7 @@ Key features include:
 
 ## Project Inspiration
 
-This system is based on a previous application developed for **G4S Greece**, where the system was analyzed, and the user interface was designed. The system was built using the following analysis techniques:
+This system is based on a previous application developed for G4S Greece, where the system was analyzed and the user interface was designed by us, using the following analysis techniques:
 - **Rich Picture**: Visual representation of system processes and interactions.
 - **Use Case Analysis/Diagram**: Identification of system interactions and user requirements.
 - **CATWOE Analysis**: Analysis tool for system and stakeholder perspectives.
